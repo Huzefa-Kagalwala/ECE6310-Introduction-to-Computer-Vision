@@ -29,6 +29,10 @@ After this, the binary image is compared with a groundtruth file and the algorit
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/roc.png)
 
+The values for the optimum threshold and their corresponding TP and FP are:
+|Threshold|True Positive|False Positive|True Positive Rate|False Positive Rate|True Negative|False Negative|
+|----|----|-----|-----|-----|-----|-----|
+|208|145|65|0.9603|0.0585|1046|6|
 
 ### Instructions:
 “Huzefa_Kagalwala_Lab2.c” is the code which implements the matched spatial filter and outputs the detections:
