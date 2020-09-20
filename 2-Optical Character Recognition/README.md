@@ -7,7 +7,7 @@ Please read `lab2.pdf` for more details.
 
 ### Implementation
 
-This code takes an image **parenthood.ppm** and detects the letters **e** in it using the given template file, **parenthood_e_template.ppm**. The detections are based off a binary image created by applying a certain threshold over the normalized matched spatial filter image formed by convolving the original image and the template.  
+This code takes an image: **parenthood.ppm** and detects the letters **"e"** in it using the given template file, **parenthood_e_template.ppm**. The detections are based off a binary image created by applying a certain threshold over the normalized matched spatial filter image formed by convolving the original image and the template.  
 
 After this, the binary image is compared with a groundtruth file and the algorithms' Receiver Operating Curve (ROC) is plotted. The point which is closest to the ideal value of 0 False Positives and 100% True Positives, gives us the value of the best applicable threshold value to create the binary image. 
 
