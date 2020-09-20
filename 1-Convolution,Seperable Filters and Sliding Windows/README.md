@@ -8,7 +8,11 @@ Please read `lab1.pdf` for more details.
 ### Similarity betwen images
 
 **Original Image**:
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/smoothed.png)
+
 **2D convolution smoothing**:
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/smoothed.png)
+
 **Seperable filter smoothing**:
 **Seperable filter and Sliding window smoothing**:
 **Terminal output to check file similarity**
@@ -18,7 +22,7 @@ Please read `lab1.pdf` for more details.
 
 | Filter      | 2D Convolution | Seperable Filter | Sliding window + Separable Filter |
 | ----------- | -----------    |   -----------    | -----------                       |
-| Average over 10 runs | 23.45087    |   11.92792    | 5.36834                       |
+| **Average over 10 runs** | 23.45087 ms   |   11.92792 ms    | 5.36834 ms                       |
 
 As can be seen, the sliding window combined with separable filter takes just 5.37 milliseconds to smoothen out the image. This is due to the lesser time complexity of the fewer nests of the for loop as well as lesser amount of arithmetic calculations of the sliding window.
 
