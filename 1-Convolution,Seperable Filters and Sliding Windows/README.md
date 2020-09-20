@@ -11,21 +11,13 @@ Please read `lab1.pdf` for more details.
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/bridge.png)
 
-**2D convolution smoothing**:
+**Comaprison of smoothing using different methods**:
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/smoothed.png)
-
-**Seperable filter smoothing**:
-
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/smoothed.png)
-
-**Seperable filter and Sliding window smoothing**:
-
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/smoothed.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/Collage.png)
 
 **Terminal output to check file similarity**
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/smoothed.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/No_diff.png)
 
 **Conclusion**: It is clear from the above, that all the three different implementations provide the same result. The time it takes to run each implementation is shown in the next section.
 
