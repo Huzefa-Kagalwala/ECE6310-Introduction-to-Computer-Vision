@@ -7,6 +7,12 @@ Please read `lab2.pdf` for more details.
 
 ### Implementation
 
+This code takes an image **parenthood.ppm** and detects the letters **e** in it using the given template file, **parenthood_e_template.ppm**. The detections are based off a biniary image created by applying a certain threshold over the normalized matched spatial filter image formed by convolving the original image and the template.  
+
+After this, the binary image is compared with a groundtruth file and the algorithms' Receiver Operating Curve (ROC) is plotted. The point which is closest to the ideal value of 0 False Positives and 100% True Positives, gives us the value of the best applicable threshold value to create the binary image. 
+
+**Note:** MATLAB r20202a was used to plot the ROC curve and find the ideal point.
+
 **Original Image**:
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/parenthood.png)
@@ -15,11 +21,14 @@ Please read `lab2.pdf` for more details.
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/normalized_msf.png)
 
-**Terminal output to check file similarity**
+**Comaprison of several binary images at different threshold values**
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows/Images/No_diff.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/Collage.png)
 
-**Conclusion**: It is clear from the above, that all the three different implementations provide the same result. The time it takes to run each implementation is shown in the next section.
+**ROC Curve obtained** 
+
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/roc.png)
+
 
 ### Instructions:
 “Huzefa_Kagalwala_Lab2.c” is the code which implements the matched spatial filter and outputs the detections:
