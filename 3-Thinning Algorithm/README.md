@@ -1,4 +1,4 @@
-# ASSIGNMENT 3: Optical Character Recognition
+# ASSIGNMENT 3: Thinning Algorithm
 ## Submitted by: Huzefa Shabbir Hussain Kagalwala
 
 ### Problem Statement:
@@ -7,7 +7,21 @@ Please read `lab3.pdf` for more details.
 
 ### Implementation
 
-This code takes an image: **parenthood.ppm** and detects the letters **"e"** in it using the given template file, **parenthood_e_template.ppm**. The detections are based off a binary image created by applying a certain threshold over the normalized matched spatial filter image formed by convolving the original image and the template.  
+This code takes an image: **parenthood.ppm** and detects the letters **"e"** in it using the given MSF image file, **normalized_msf.ppm**. The detections are based off a binary image created by applying a certain threshold over the normalized matched spatial filter image formed by convolving the original image and the template.
+
+To refine this preliminiary detections, we apply another "filter" using the Zhang-Suen Thinning Algorithm. If there is a detection, we then slice out the letter from the original image and binarize it at a threshold of 128. The thinning algorithm is applied at this smallbinary slice. The steps of the thinning algorithm are:
+1. Pass through all pixels which are edges
+   i. Count the number of edge to non-edge transitions in clockwise/anti-clockwise fashion
+   ii. Count the number of edge neighbors.
+   iii. The pixel to the North or East or (West and South) of the pixel under consideration should not be an edge.
+2. If the number of edge to non-edge transitions is equal 1 and the number of edge neighbors lies between 2 and 6 (inclusive interval) and    the third condition is true; then the pixel is marked for erasure.  
+3. This process is repeated until there are no pixels marked for erasure
+
+After this is over, we calculate the number of branchpoints and endpoints an image has by the following conditions:
+1. If the pixel has only one edge to non-edge transition, in its neighboring cells, when checked clockwise/anti-clockwise, then it is an endpoint.
+2. If the pixel has more than two edge to non-edge transitions, in its neighboring cells, when checked clockwise/anti-clockwise, then it is a branchpoint.
+
+For the letter "e", we should have 1 branchpoint and 1 endpoint. This condition could be different for different letters (A "t" would have 1 branchpoint and 2 endpoints.). If the condition for the letter "e" is satisfied, we consider the letter detected.
 
 After this, the binary image is compared with a groundtruth file and the algorithms' Receiver Operating Characteristic (ROC) curve is plotted. The point which is closest to the ideal value of 0 False Positives and 100% True Positives, gives us the value of the best applicable threshold value to create the binary image. 
 
