@@ -9,7 +9,7 @@ Please read `lab3.pdf` for more details.
 
 This code takes an image: **parenthood.ppm** and detects the letters **"e"** in it using the given MSF image file, **normalized_msf.ppm**. The detections are based off a binary image created by applying a certain threshold over the normalized matched spatial filter image formed by convolving the original image and the template.
 
-To refine this preliminiary detections, we apply another "filter" using the Zhang-Suen Thinning Algorithm. If there is a detection, we then slice out the letter from the original image and binarize it at a threshold of 128. The thinning algorithm is applied at this smallbinary slice. The steps of the thinning algorithm are:
+To refine these preliminary detections, we apply another "filter" using the Zhang-Suen Thinning Algorithm. If there is a detection, we then slice out the letter from the original image and binarize it at a threshold of 128. The thinning algorithm is applied at this small binary slice. The steps of the thinning algorithm are:
 1. Pass through all pixels which are edges
    1. Count the number of edge to non-edge transitions in clockwise/anti-clockwise fashion
    2. Count the number of edge neighbors.
