@@ -11,9 +11,9 @@ This code takes an image: **parenthood.ppm** and detects the letters **"e"** in 
 
 To refine this preliminiary detections, we apply another "filter" using the Zhang-Suen Thinning Algorithm. If there is a detection, we then slice out the letter from the original image and binarize it at a threshold of 128. The thinning algorithm is applied at this smallbinary slice. The steps of the thinning algorithm are:
 1. Pass through all pixels which are edges
-   i. Count the number of edge to non-edge transitions in clockwise/anti-clockwise fashion
-   ii. Count the number of edge neighbors.
-   iii. The pixel to the North or East or (West and South) of the pixel under consideration should not be an edge.
+   1. Count the number of edge to non-edge transitions in clockwise/anti-clockwise fashion
+   2. Count the number of edge neighbors.
+   3. The pixel to the North or East or (West and South) of the pixel under consideration should not be an edge.
 2. If the number of edge to non-edge transitions is equal 1 and the number of edge neighbors lies between 2 and 6 (inclusive interval) and    the third condition is true; then the pixel is marked for erasure.  
 3. This process is repeated until there are no pixels marked for erasure
 
