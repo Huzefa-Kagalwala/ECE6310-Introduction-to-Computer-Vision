@@ -11,7 +11,7 @@ This code takes an image: **parenthood.ppm** and detects the letters **"e"** in 
 
 After this, the binary image is compared with a groundtruth file and the algorithms' Receiver Operating Characteristic (ROC) curve is plotted. The point which is closest to the ideal value of 0 False Positives and 100% True Positives, gives us the value of the best applicable threshold value to create the binary image. 
 
-**Note:** MATLAB r20202a was used to plot the ROC curve and find the ideal point.
+**Note:** MATLAB r2020a was used to plot the ROC curve and find the ideal point.
 
 **Original Image**:
 

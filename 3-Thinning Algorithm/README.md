@@ -11,28 +11,40 @@ This code takes an image: **parenthood.ppm** and detects the letters **"e"** in 
 
 After this, the binary image is compared with a groundtruth file and the algorithms' Receiver Operating Characteristic (ROC) curve is plotted. The point which is closest to the ideal value of 0 False Positives and 100% True Positives, gives us the value of the best applicable threshold value to create the binary image. 
 
-**Note:** MATLAB r20202a was used to plot the ROC curve and find the ideal point.
+**Note:** MATLAB r2020a was used to plot the ROC curve and find the ideal point.
 
 **Original Image**:
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/parenthood.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/parenthood.png)
 
 **Normalized Matched Spatial Filter Image**:
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/normalized_msf.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/normalized_msf.png)
 
-**Comaprison of several binary images at different threshold values**
+**Binary image of the letter "e"**
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/Collage.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/binary_e.png)
+
+**Thinned image of the letetr "e"**
+
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/thinned_e.png)
+
+**Branchpoints and Endpoints detected in the thinned image**
+
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/marked_e.png)
 
 **ROC Curve obtained** 
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/2-Optical%20Character%20Recognition/Data/roc.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/roc.png)
 
 The values for the optimum threshold and their corresponding TP and FP are:
-|Threshold|True Positive|False Positive|True Positive Rate|False Positive Rate|True Negative|False Negative|
+|Threshold|True Positives|False Positives|True Positive Rate|False Positive Rate|True Negatives|False Negatives|
 |----|----|-----|-----|-----|-----|-----|
 |200|144|25|0.9536|0.0225|1086|7|
+
+We can see that in this ROC curve the False Positive Rate axis has been drastically reduced. This indicates that we have been successful in removing false positives from our OCR algorithm. 
+
+The only drawback in this approach is that some letters may have the same attributes. So, what we consider to be an "e", could be another letter too, thereby not eliminating false positives altogether.
 
 ### Instructions:
 “Huzefa_Kagalwala_Lab3.c” is the code which implements the matched spatial filter and outputs the detections:
