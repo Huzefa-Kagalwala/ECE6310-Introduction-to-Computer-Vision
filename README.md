@@ -9,10 +9,10 @@ This repository contains the assignments and final project done in the course, *
 - [x] Template matching, cross co-relation
 - [x] Receiver Operator Characteristic Curve
 - [x] Matched filter, and Weiner filter.
-- [ ] Edge properties, skeletonization.
-- [ ] Segmentation (Region growing, queue method)
-- [ ] Region properties.
-- [ ] GUI event driven programming.
+- [x] Edge properties, skeletonization.
+- [x] Segmentation (Region growing, queue method)
+- [x] Region properties.
+- [x] GUI event driven programming.
 - [ ] System latency
 - [ ] Active contours models.
 - [ ] Texture, camera calibration, grid finding, and stereo vision.
@@ -24,3 +24,4 @@ This repository contains the assignments and final project done in the course, *
 # Assignments
 ### [Assignment-1 Convolution,Seperable Filters and Sliding Windows](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows)
 ### [Assignment-2 Optical Character Recognition](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/2-Optical%20Character%20Recognition)
+### [Assignment-3 Thinning Algorithm](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/3-Thinning%20Algorithm)
