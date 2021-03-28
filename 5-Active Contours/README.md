@@ -10,13 +10,13 @@ The rubber band model of active contours is based on 3 energies or driving force
 
 The contour points are moved in a 7x7 window for 30 iterations. For every contour point, the 3 energies are calculated, and the pixel with the least overall energy in the window is chosen as the new location for the contour point.
 
-**Original Image with initial contour points**:
+|Original Image|Sobel Filter Output|
+|--------------|-------------------|
+|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/hawk.png)|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/sobel_hawk.png)|
+
+**Initial Contour Points**
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/marked_hawk_initial.png)
-
-**Output of the Sobel Filter**:
-
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/sobel_hawk.png)
 
 **Output of the Active Contours Program**
 
