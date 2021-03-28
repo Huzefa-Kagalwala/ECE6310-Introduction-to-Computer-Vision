@@ -1,0 +1,26 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  main.c
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(77,43): warning C4101: 'indices': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(77,16): warning C4101: 'xPos': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(77,34): warning C4101: 'r2': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(77,31): warning C4101: 'c': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(77,38): warning C4101: 'c2': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(77,22): warning C4101: 'yPos': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(77,28): warning C4101: 'r': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(76,22): warning C4101: 'text': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(293,53): warning C4047: 'function': 'BOOL *' differs in levels of indirection from 'BOOL **'
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(293,48): warning C4024: 'GetDlgItemInt': different types for formal and actual parameter 3
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(299,53): warning C4047: 'function': 'BOOL *' differs in levels of indirection from 'BOOL **'
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(299,48): warning C4024: 'GetDlgItemInt': different types for formal and actual parameter 3
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(394,78): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(398,87): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(399,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(403,32): warning C4020: 'RegionGrowing': too many actual parameters
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(383,28): warning C4101: 'BoxWidth': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(381,7): warning C4101: 'hDC': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(383,41): warning C4101: 'c': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(383,38): warning C4101: 'r': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(382,7): warning C4101: 'text': unreferenced local variable
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(416,1): warning C4029: declared formal parameter list different from definition
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\main.c(454,99): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  plus.vcxproj -> E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\Debug\plus.exe

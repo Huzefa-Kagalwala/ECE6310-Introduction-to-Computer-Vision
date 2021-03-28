@@ -1,0 +1,6 @@
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Reading Materials\GUI\Debug\plus.exe
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Reading Materials\GUI\Debug\plus.pdb
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Reading Materials\GUI2\Debug\plus.exe
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Reading Materials\GUI2\Debug\plus.pdb
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\Debug\plus.exe
+E:\CU-ICAR\Course Files\Fall 2020\ECE631-Intro to Computer Vision\Assignments\HW4\Project Files\Debug\plus.pdb
