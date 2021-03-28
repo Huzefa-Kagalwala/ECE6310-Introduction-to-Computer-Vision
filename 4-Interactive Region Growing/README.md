@@ -2,7 +2,7 @@
 ## Submitted by: Huzefa Shabbir Hussain Kagalwala
 
 ### Problem Statement:
-In this project I implemented interactive region growing by developing a Windows program written using the Win32 library. The program allows the user to load and display an image, and demonstrates several GUI and event handling techniques. The plus program was written using Microsoft Visual Studio 2019
+In this project I implemented interactive region growing by developing a Windows program using the Win32 library. The program allows the user to load and display an image, and demonstrates several GUI and event handling techniques. The program was written using Microsoft Visual Studio 2019
 
 Please read `lab4.pdf` for more details.
 
