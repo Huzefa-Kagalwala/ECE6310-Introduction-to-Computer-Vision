@@ -2,39 +2,39 @@
 ## Submitted by: Huzefa Shabbir Hussain Kagalwala
 
 ### Problem Statement:
-In this project, I had to implement a program to calculate the motion of an iPhone along and about the principal axes using accelerometers and gyroscopes. The iPhone was moved individually along or about each axis independently for a period of 2-3 seconds. Between each motion, the iPhone was held at rest for 2-3 seconds. The goal of the lab was to automatically segment the data into periods of motion and periods of rest, and calculate the motion along and about each axis during the periods of motion.
+In this project I had to segment a range image based upon surface normals, using the range image of a chair. Some C-code was also provided to convert the pixels into 3D coordinates. The segmentation process used the image grid for grouping pixels, but used the 3D coordinates for calculating surface normals for region predicates.
 
-Please read `lab7.pdf` for more details.
+Please read `lab8.pdf` for more details.
 
-### Implementation
-- Accelerometer data was double integrated to find the linear motion and Gyroscope data was integrated to find the angular motion.
-- The data was first smoothened out using a mean filter.
-- The variance between data points was used as a metric to differentiate between motion and rest.
-- A simple low pass filter also has been implemented to reject any erroneous motions (as the phone was moved by hand, some jitter is bound to have been introduced in the motion data, which also needed to be filtered out.)
+### Implementation:
+- The `odetics-to-coords.c` file was used to convert the range data at each pixel into 3D coordinates. This script used the model of the laser scanner used to perform this conversion.
+- The range image was thresholded to remove the background.
+- Surface normals were calculated between points lying within 3 units.
+- Region growing was performed based on predicates, which can be read about further in the report `Huzefa_Kagalwala_Lab8.pdf`
 
-For further details, please read the report `Huzefa_Kagalwala_Lab7.pdf`
 
-|Original Image|Sobel Filter Output|
+|Range Image|Reflectance Image|
 |--------------|-------------------|
-|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/hawk.png)|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/sobel_hawk.png)|
+|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/8-Range%20Image%20Segmentation/Data/chair-range.png)|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/8-Range%20Image%20Segmentation/Data/chair-reflectance.png)|
 
-**Graph showing the filtered motion signals**
+**Surface Normals**
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/7-Motion%20Tracking/Data/motion_graph.jpg)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/8-Range%20Image%20Segmentation/Data/surface-normals.png)
 
-**Table of motion**
+**Region Growing Output**
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/7-Motion%20Tracking/Data/motion_table.jpg)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/8-Range%20Image%20Segmentation/Data/seg_annot.png)
 
 ### Instructions:
-“Huzefa_Kagalwala_Lab8.c” is the code which implements the active contours algorithm. Run it using the following commands:
+“Huzefa_Kagalwala_Lab8.c” is the code which implements the range image segmentation algorithm. Run it using the following commands:
 
-   `gcc -o <executable-name> Huzefa_Kagalwala_Lab7.c -lm`.
+   `gcc -o <executable-name> Huzefa_Kagalwala_Lab8.c -lm`.
 
-   Then run it, using the following command: `./executable-name`.
+   Then run it, using the following command: `./executable-name chair-range.ppm chair-reflectance.ppm`.
 
 The following outputs will be obtained:
-1. `Rest.txt`. This text file contains the time stamps and indices of the time stamps the phone was at rest.
-2. `Motion.txt`. This text file contains the time stamps and indices of the time stamps the phone was in motion, also the motion traversed.
+1. `Output.csv`. This file contains the 3D coordinates of the range data and the components of the surface normals calculated.
+2. `threshold.ppm`. The thresholded image containing only the pixels to be considered for region growing.
+3. `seg.ppm`. The image file which shows the segments grown.
 
-**Note:** Keep the data file `acc_gyro.txt` in the same directory as the code file, for the file to run.
+**Note:** Keep the image files in the same directory as the code file, for the file to run.
