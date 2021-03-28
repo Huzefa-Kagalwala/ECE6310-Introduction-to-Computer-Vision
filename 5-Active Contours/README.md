@@ -1,31 +1,14 @@
-# ASSIGNMENT 3: Thinning Algorithm
+# ASSIGNMENT 5: Active Contours
 ## Submitted by: Huzefa Shabbir Hussain Kagalwala
 
 ### Problem Statement:
-In this project, I had to implement a Zhang-Suen thinning algorithm which would help in weeding out false positives in detecting the letter "e" in the image provided. This is project builds up on the previous one to make the optical character recognition more robust.
-Please read `lab3.pdf` for more details.
+In this project, I had to implement a program for active contours, which is a form of semi-automated image segmentation. An initial set of contour points is provided, which is then moved towards the goal location by a set of driving forces or "energies". The rubber band model of active contours have been implemented here. In this model, a set of points is drawn outside the object of interest, which will then move towards the object and envelope it.
+Please read `lab5.pdf` for more details.
 
 ### Implementation
+The rubber band model of active contours is based on 3 energies or driving forces. Two of these are **internal energies**, which are dependent on the location of the points relative to one another and have no relation with the image and the other **external energy** term is dependent on the gradients of the image, so that points can lock in on an edge.
 
-This code takes an image: **parenthood.ppm** and detects the letters **"e"** in it using the given MSF image file, **normalized_msf.ppm**. The detections are based off a binary image created by applying a certain threshold over the normalized matched spatial filter image formed by convolving the original image and the template.
-
-To refine these preliminary detections, we apply another "filter" using the Zhang-Suen Thinning Algorithm. If there is a detection, we then slice out the letter from the original image and binarize it at a threshold of 128. The thinning algorithm is applied at this small binary slice. The steps of the thinning algorithm are:
-1. Pass through all pixels which are edges
-   1. Count the number of edge to non-edge transitions in clockwise/anti-clockwise fashion
-   2. Count the number of edge neighbors.
-   3. The pixel to the North or East or (West and South) of the pixel under consideration should not be an edge.
-2. If the number of edge to non-edge transitions is equal 1 and the number of edge neighbors lies between 2 and 6 (inclusive interval) and    the third condition is true; then the pixel is marked for erasure.  
-3. This process is repeated until there are no pixels marked for erasure
-
-After this is over, we calculate the number of branchpoints and endpoints an image has by the following conditions:
-1. If the pixel has only one edge to non-edge transition, in its neighboring cells, when checked clockwise/anti-clockwise, then it is an endpoint.
-2. If the pixel has more than two edge to non-edge transitions, in its neighboring cells, when checked clockwise/anti-clockwise, then it is a branchpoint.
-
-For the letter "e", we should have 1 branchpoint and 1 endpoint. This condition could be different for different letters (A "t" would have 1 branchpoint and 2 endpoints.). If the condition for the letter "e" is satisfied, we consider the letter detected.
-
-After this, the binary image is compared with a groundtruth file and the algorithms' Receiver Operating Characteristic (ROC) curve is plotted. The point which is closest to the ideal value of 0 False Positives and 100% True Positives, gives us the value of the best applicable threshold value to create the binary image. 
-
-**Note:** MATLAB r2020a was used to plot the ROC curve and find the ideal point.
+The contour points are moved in a 7x7 window for 30 iterations. For every contour point, the 3 energies are calculated, and the pixel with the least overall energy in the window is chosen as the new location for the contour point.
 
 **Original Image**:
 
@@ -39,7 +22,7 @@ After this, the binary image is compared with a groundtruth file and the algorit
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/binary_e.png)
 
-**Thinned image of the letetr "e"**
+**Thinned image of the letter "e"**
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/thinned_e.png)
 
@@ -61,11 +44,17 @@ We can see that in this ROC curve the False Positive Rate axis has been drastica
 The only drawback in this approach is that some letters may have the same attributes. So, what we consider to be an "e", could be another letter too, thereby not eliminating false positives altogether.
 
 ### Instructions:
-“Huzefa_Kagalwala_Lab3.c” is the code which implements the matched spatial filter and outputs the detections:
+“Huzefa_Kagalwala_Lab5.c” is the code which implements the active contours algorithm. Run it using the following commands:
 
-   `gcc -o <executable-name> Huzefa_Kagalwala_Lab3.c`.
+   `gcc -o <executable-name> Huzefa_Kagalwala_Lab5.c -lm`.
 
-   Then run it, using the following command: `./executable-name parenthood.ppm normalized_msf.ppm parenthood_gt.txt`.
+   Then run it, using the following command: `./executable-name hawk.ppm normalized_msf.ppm hawk_init.txt`.
+
+The following outputs will be obtained:
+1. `sobel_hawk.ppm`. This is the sobel filtered image of the input image.
+2. `marked_hawk_initial`. This is the image with the initial contour points marked on it.
+3. `marked_hawk_final`. This is the image with the final contour points.
+4. `hawk_final.txt`. This text file has the locations of the final contour points.
 
 
-**Note:** Keep the groundtruth data, original image and the MSFimage in the same directory as the file, for the file to run.
+**Note:** Keep the intial contour points and original image in the same directory as the file, for the file to run.

@@ -13,15 +13,16 @@ This repository contains the assignments and final project done in the course, *
 - [x] Segmentation (Region growing, queue method)
 - [x] Region properties.
 - [x] GUI event driven programming.
-- [ ] System latency
-- [ ] Active contours models.
-- [ ] Texture, camera calibration, grid finding, and stereo vision.
-- [ ] Gyroscopes and accelerometers.
-- [ ] Motion Tracking
-- [ ] Range cameras, and range image segmentation.
-- [ ] Deep Learning, and object recognition.
+- [x] System latency
+- [x] Active contours models.
+- [x] Texture, camera calibration, grid finding, and stereo vision.
+- [x] Gyroscopes and accelerometers.
+- [x] Motion Tracking
+- [x] Range cameras, and range image segmentation.
+- [x] Deep Learning, and object recognition.
 
 # Assignments
 ### [Assignment-1 Convolution,Seperable Filters and Sliding Windows](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows)
 ### [Assignment-2 Optical Character Recognition](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/2-Optical%20Character%20Recognition)
 ### [Assignment-3 Thinning Algorithm](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/3-Thinning%20Algorithm)
+### [Assignment-5 Active Contours](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/5-Active%20Contours)

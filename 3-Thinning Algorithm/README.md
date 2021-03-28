@@ -39,7 +39,7 @@ After this, the binary image is compared with a groundtruth file and the algorit
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/binary_e.png)
 
-**Thinned image of the letetr "e"**
+**Thinned image of the letter "e"**
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/thinned_e.png)
 
