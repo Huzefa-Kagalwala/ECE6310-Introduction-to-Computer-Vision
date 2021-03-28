@@ -6,7 +6,8 @@ In this project I implemented interactive region growing by developing a Windows
 
 Please read `lab4.pdf` for more details.
 
-### Implementation
+### Implementation:
+
 Some of the salient features of the application are:
 - Entering the values of the predicates the region growing is dependent on, to study its effects.
 - The user can click on any location to visualize the region growing. 
@@ -20,7 +21,7 @@ Some of the salient features of the application are:
 
 **Working video of the application**
 
-![]()
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/4-Interactive%20Region%20Growing/Data/program.gif)
 
 Please read the report `Huzefa_Kagalwala_Lab4` for further details of the project.
 
