@@ -28,3 +28,4 @@ This repository contains the assignments and final project done in the course, *
 ### [Assignment-4 Interactive Region Growing](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/4-Interactive%20Region%20Growing)
 ### [Assignment-5 Active Contours](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/5-Active%20Contours)
 ### [Assignment-7 Motion Tracking](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/7-Motion%20Tracking)
+### [Assignment-8 Range Image Segmentation](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/8-Range%20Image%20Segmentation)
