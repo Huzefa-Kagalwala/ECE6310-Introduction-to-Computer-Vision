@@ -16,11 +16,11 @@ For further details, please the report `Huzefa_Kagalwala_Lab7.pdf`
 
 **Graph showing the filtered motion signals**
 
-![]()
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/7-Motion%20Tracking/Data/motion_graph.jpg)
 
 **Table of motion**
 
-![]()
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/7-Motion%20Tracking/Data/motion_table.jpg)
 
 ### Instructions:
 “Huzefa_Kagalwala_Lab7.c” is the code which implements the active contours algorithm. Run it using the following commands:
