@@ -12,7 +12,7 @@ Please read `lab7.pdf` for more details.
 - The variance between data points was used as a metric to differentiate between motion and rest.
 - A simple low pass filter also has been implemented to reject any erroneous motions (as the phone was moved by hand, some jitter is bound to have been introduced in the motion data, which also needed to be filtered out.)
 
-For further details, please the report `Huzefa_Kagalwala_Lab7.pdf`
+For further details, please read the report `Huzefa_Kagalwala_Lab7.pdf`
 
 **Graph showing the filtered motion signals**
 
