@@ -25,4 +25,5 @@ This repository contains the assignments and final project done in the course, *
 ### [Assignment-1 Convolution,Seperable Filters and Sliding Windows](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/1-Convolution%2CSeperable%20Filters%20and%20Sliding%20Windows)
 ### [Assignment-2 Optical Character Recognition](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/2-Optical%20Character%20Recognition)
 ### [Assignment-3 Thinning Algorithm](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/3-Thinning%20Algorithm)
+### [Assignment-4 Interactive Region Growing](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/4-Interactive%20Region%20Growing)
 ### [Assignment-5 Active Contours](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/tree/master/5-Active%20Contours)
