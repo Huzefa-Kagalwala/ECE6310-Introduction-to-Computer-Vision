@@ -195,7 +195,7 @@ int main(int argc, char *argv[])
   fpt=fopen("sobel_hawk.ppm","wb");
   if (fpt == NULL)
     {
-      printf("Unable to open inverted.ppm for writing\n");
+      printf("Unable to open sobel_hawk.ppm for writing\n");
       exit(0);
     }
   fprintf(fpt, "P5 %d %d 255\n", COLS, ROWS);
