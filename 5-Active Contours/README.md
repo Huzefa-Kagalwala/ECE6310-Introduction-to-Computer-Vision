@@ -14,15 +14,11 @@ The contour points are moved in a 7x7 window for 30 iterations. For every contou
 |--------------|-------------------|
 |![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/hawk.png)|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/sobel_hawk.png)|
 
-**Initial Contour Points**
+|Initial Contour Points|Final Contour Points Output|
+|--------------|-------------------|
+|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/marked_hawk_initial.png)|![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/marked_hawk_final.png)|
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/marked_hawk_initial.png)
-
-**Output of the Active Contours Program**
-
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/marked_hawk_final.png)
-
-**Animation of the working of the Active COntours Program**
+**Animation of the working of the Active Contours Program**
 
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/animation.gif)
 
