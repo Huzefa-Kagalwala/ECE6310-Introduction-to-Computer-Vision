@@ -23,7 +23,7 @@ For further details, please read the report `Huzefa_Kagalwala_Lab7.pdf`
 ![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/7-Motion%20Tracking/Data/motion_table.jpg)
 
 ### Instructions:
-“Huzefa_Kagalwala_Lab7.c” is the code which implements the active contours algorithm. Run it using the following commands:
+“Huzefa_Kagalwala_Lab7.c” is the code which implements the motion tracking algorithm. Run it using the following commands:
 
    `gcc -o <executable-name> Huzefa_Kagalwala_Lab7.c -lm`.
 
