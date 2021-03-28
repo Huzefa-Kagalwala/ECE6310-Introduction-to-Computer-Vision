@@ -10,38 +10,21 @@ The rubber band model of active contours is based on 3 energies or driving force
 
 The contour points are moved in a 7x7 window for 30 iterations. For every contour point, the 3 energies are calculated, and the pixel with the least overall energy in the window is chosen as the new location for the contour point.
 
-**Original Image**:
+**Original Image with initial contour points**:
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/parenthood.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/marked_hawk_initial.png)
 
-**Normalized Matched Spatial Filter Image**:
+**Output of the Sobel Filter**:
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/normalized_msf.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/sobel_hawk.png)
 
-**Binary image of the letter "e"**
+**Output of the Active Contours Program**
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/binary_e.png)
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/marked_hawk_final.png)
 
-**Thinned image of the letter "e"**
+**Animation of the working of the Active COntours Program**
 
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/thinned_e.png)
-
-**Branchpoints and Endpoints detected in the thinned image**
-
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/marked_e.png)
-
-**ROC Curve obtained** 
-
-![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/3-Thinning%20Algorithm/Data/roc.png)
-
-The values for the optimum threshold and their corresponding TP and FP are:
-|Threshold|True Positives|False Positives|True Positive Rate|False Positive Rate|True Negatives|False Negatives|
-|----|----|-----|-----|-----|-----|-----|
-|200|144|25|0.9536|0.0225|1086|7|
-
-We can see that in this ROC curve the False Positive Rate axis has been drastically reduced. This indicates that we have been successful in removing false positives from our OCR algorithm. 
-
-The only drawback in this approach is that some letters may have the same attributes. So, what we consider to be an "e", could be another letter too, thereby not eliminating false positives altogether.
+![](https://github.com/Huzefa-Kagalwala/ECE6310-Introduction-to-Computer-Vision/blob/master/5-Active%20Contours/Data/animation.gif)
 
 ### Instructions:
 “Huzefa_Kagalwala_Lab5.c” is the code which implements the active contours algorithm. Run it using the following commands:
