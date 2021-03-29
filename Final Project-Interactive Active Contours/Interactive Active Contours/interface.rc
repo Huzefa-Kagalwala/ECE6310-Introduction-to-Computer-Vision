@@ -1,0 +1,162 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""windows.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_MAIN_MENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Load Image",                 ID_FILE_LOAD
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit",                       ID_FILE_QUIT
+    END
+    POPUP "Display"
+    BEGIN
+        MENUITEM "Original",                    ID_DISPLAY_ORIGINAL
+        MENUITEM "Sobel",                       ID_DISPLAY_SOBEL
+    END
+    POPUP "Region Growing"
+    BEGIN
+        MENUITEM "Growth Predicates",           ID_REGIONGROWING_GROWTHPREDICATES
+        POPUP "Color"
+        BEGIN
+            MENUITEM "Red",                         ID_COLOR_RED
+            MENUITEM "Blue",                        ID_COLOR_BLUE
+            MENUITEM "Green",                       ID_COLOR_GREEN
+            MENUITEM "Orange",                      ID_COLOR_ORANGE
+            MENUITEM "Yellow",                      ID_COLOR_YELLOW
+        END
+        MENUITEM "Auto",                        ID_REGIONGROWING_AUTO
+        MENUITEM "Step",                        ID_REGIONGROWING_STEP
+    END
+    POPUP "Active Contours"
+    BEGIN
+        MENUITEM "Rubber Band",                 ID_ACTIVECONTOURS_RUBBERBAND
+        MENUITEM "Balloon",                     ID_ACTIVECONTOURS_BALLOON
+        MENUITEM "Neutral",                     ID_ACTIVECONTOURS_NEUTRAL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_PLUS_ICON            ICON                    "icon1.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 311, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Choose Predicate Values"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,92,50,14
+    LTEXT           "Predicate 1 (Absolute difference between average intensity and pixel intensity)",IDC_STATIC,13,24,133,18
+    LTEXT           "Predicate 2 (Distance between pixel and centroid of region)",IDC_STATIC,12,51,141,21
+    EDITTEXT        IDC_EDIT1,206,26,62,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,205,53,64,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
